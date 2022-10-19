@@ -17,5 +17,5 @@ fun GudangPanggilan.SebutanMedium() : String
 }
 
 fun GudangPanggilan.SebutanHard() : String{
-    return "Woi " + "BAGAS" + " Sok Asik Lo"
+    return "Woi " + "Bagas" + " Sok Asik Lo"
 }

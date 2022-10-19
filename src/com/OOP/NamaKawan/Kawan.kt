@@ -2,18 +2,18 @@ package com.OOP.NamaKawan
 
 fun main()
 {
-    fun String.EjekDia( Sebtan : String) : String{
-        return "Kamu " + this + Sebtan
+    infix fun String.EjekDia( Sebutan : String) : String{
+        return "Kamu " + this + Sebutan
     }
 
-    fun String.PujiDia( Sebutan : String) : String{
+    infix fun String.PujiDia( Sebutan : String) : String{
         return  "Kamu " + this + Sebutan
     }
 
 //  Extension Dari main
     val nama = "Agus"
-    println (nama.EjekDia(" Jelek"))
-    println (nama.PujiDia(" Pintar"))
+    println (nama EjekDia " Jelek")              // Gak perlu pakai dot lagi dia
+    println (nama PujiDia " Ganteng")
 
 //    Extension Dari Class
     val panggil = GudangPanggilan(nama)
@@ -30,3 +30,6 @@ fun main()
 
 
 /* "Kamu" + this (didapat dari val yang dipanggil) + Sebutan (didapat dari parameter function)  */
+
+
+//  Kalau bisa pakai infix untuk extension function yang memiliki 1 parameter agar mudah dibaca
