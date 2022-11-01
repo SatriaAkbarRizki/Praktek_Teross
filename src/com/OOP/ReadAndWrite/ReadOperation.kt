@@ -5,7 +5,7 @@ import java.nio.file.Paths
 import java.util.*
 
 var getFileUserName = ""
-class readOperation
+class ReadOperation
 {
     val input = Scanner(System.`in`)
     var collectionNameFile = ArrayList <String>()
@@ -20,7 +20,7 @@ class readOperation
             File(it).forEachLine { println(it) }
             (0..18).forEach{ print("=") }; println()
 
-            println("Reader Sukses")
+            println("Reading Sukses")
 
         }catch (e : Exception)
         {
