@@ -6,7 +6,7 @@ import java.util.*
 val  nameProgram = arrayOf(null,"Read File", "Write FIle", "Convert File to Word")
 
 val listProgram : (pilihan : Int) -> Unit = {
-    val showFile = readOperation()
+    val showFile = ReadOperation()
     when(it)
     {
         1 -> showFile.ReadShow()
@@ -23,7 +23,7 @@ fun main()
     val inputUser = Scanner(System.`in`)
     print("Ingin Memakai Program Ini [Y/N] -> ")
     val pilihanUser = inputUser.nextLine()
-//    val showFile = readOperation()
+//    val showFile = ReadOperation()
     if(pilihanUser.equals("Y", ignoreCase = true))
     {
         for (x in 1..nameProgram.size){ println("[" + "$x" + "]" + " " + nameProgram[x])
