@@ -2,9 +2,24 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="JavaAPI" />
+      <option name="name" value="Aspose Java API" />
+      <option name="url" value="http://artifact.aspose.com/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="JavaAPI" />
+      <option name="name" value="Aspose Java API" />
+      <option name="url" value="https://releases.aspose.com/java/repo/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="groupdocs-artifacts-repository" />
+      <option name="name" value="GroupDocs Artifacts Repository" />
+      <option name="url" value="https://releases.groupdocs.com/java/repo/" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -23,6 +38,16 @@
     </remote-repository>
     <remote-repository>
       <option name="id" value="AsposeJavaAPI" />
+      <option name="name" value="Aspose Java API" />
+      <option name="url" value="https://releases.aspose.com/java/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="AsposeJavaAPI" />
+      <option name="name" value="Aspose Java API" />
+      <option name="url" value="http://artifact.aspose.com/repo/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="AsposeJavaApi" />
       <option name="name" value="Aspose Java API" />
       <option name="url" value="https://releases.aspose.com/java/repo/" />
     </remote-repository>

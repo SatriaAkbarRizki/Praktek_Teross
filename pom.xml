@@ -7,7 +7,7 @@
     <name>My Apllication Word</name>
     <description>krepo</description>
 
-    <groupId>groupId</groupId>
+    <groupId>PratekTeross</groupId>
     <artifactId>PraktekTeross</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -15,5 +15,86 @@
         <maven.compiler.source>19</maven.compiler.source>
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kotlin.version>1.7.20</kotlin.version>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>AsposeJavaApi</id>
+            <name>Aspose Java API</name>
+            <url>https://releases.aspose.com/java/repo/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.kotlin</groupId>
+                <artifactId>kotlin-maven-plugin</artifactId>
+                <version>${kotlin.version}</version>
+                <executions>
+                    <execution>
+                        <id>compile</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>test-compile</id>
+                        <phase>test-compile</phase>
+                        <goals>
+                            <goal>test-compile</goal>
+                        </goals>
+                        <configuration>
+                            <sourceDirs>
+                                <source>test</source>
+                                <source>src/test/java</source>
+                            </sourceDirs>
+                        </configuration>
+                    </execution>
+                </executions>
+                <configuration>
+                    <jvmTarget>1.8</jvmTarget>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.aspose</groupId>
+            <artifactId>aspose-words</artifactId>
+            <version>22.9</version>
+            <classifier>jdk17</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-stdlib-jdk8</artifactId>
+            <version>${kotlin.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains.kotlin</groupId>
+            <artifactId>kotlin-test</artifactId>
+            <version>${kotlin.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>groupdocs-artifacts-repository</id>-->
+<!--            <name>GroupDocs Artifacts Repository</name>-->
+<!--            <url>https://releases.groupdocs.com/java/repo/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
+<!--    <dependencies>-->
+<!--        <dependency>-->
+<!--            <groupId>com.groupdocs</groupId>-->
+<!--            <artifactId>groupdocs-conversion</artifactId>-->
+<!--            <version>17.12</version>-->
+<!--        </dependency>-->
+<!--    </dependencies>-->
+
+
 </project>
