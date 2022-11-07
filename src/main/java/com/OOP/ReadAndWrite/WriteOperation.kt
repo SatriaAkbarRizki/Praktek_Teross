@@ -12,8 +12,15 @@ class WriteOperation {
 
     fun outputFile()
     {
-        print("Nama File: "); val nameFile = inputUser.nextLine()
-        print("Isi Text: "); val isiText = inputUser.nextLine()
-        createFile(nameFile,isiText)
+        try
+        {
+            print("Nama File: "); val nameFile = inputUser.nextLine()
+            print("Isi Text: "); val isiText = inputUser.nextLine()
+            createFile(nameFile,isiText)
+            println("Writing Success...")
+        }catch (e : Exception)
+        {
+            println("Ada yang salah.. silahkan coba lagi")
+        }
     }
 }

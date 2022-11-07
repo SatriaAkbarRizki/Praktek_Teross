@@ -20,7 +20,7 @@ class ReadOperation
             File(it).forEachLine { println(it) }
             (0..18).forEach{ print("=") }; println()
 
-            println("Reading Sukses")
+            println("Reading Success")
 
         }catch (e : Exception)
         {
@@ -50,7 +50,7 @@ inline fun getFile (getCollectionName : ArrayList <String>) : Unit{
 
     print("Masukkan File yang ingin dibuka: "); val openFile = input.nextLine()
     getCollectionName.forEach{ if (it.contains(openFile)){
-        println(it)
+        println("Nama File: " + it)
         getFileUserName = it
     }else if (it.contains(openFile) == null){
         println("File tidak ditemukan");return@getFile

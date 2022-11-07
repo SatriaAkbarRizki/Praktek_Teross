@@ -26,7 +26,7 @@ class Convert_ToWord {
         getFile2(collectionNameFile)
         println()
         println("Convert Txt to Word, Now...")
-        println("Please Wait..")
+        print("Please Wait..")
         nameFile.toWord(nameFile)
     }
 }
@@ -37,7 +37,7 @@ inline fun getFile2 (getCollectionName : ArrayList <String>) : Unit{
 
     print("Masukkan File yang ingin dibuka: "); val openFile = input.nextLine()
     getCollectionName.forEach{ if (it.contains(openFile)){
-        println(it)
+        println("Nama File: " + it)
         nameFile = it
     }else if (it.contains(openFile) == null){
             println("File tidak ditemukan");return@getFile2
@@ -51,8 +51,10 @@ infix fun String.toWord(name : String): Unit
     try
     {
         val doc = Document(name)
-        doc.save(name + ".docx")
-        println("Convert Succes")
+        val changeNameFile = name.substringBeforeLast(".txt") + ".docx"
+        doc.save(changeNameFile)
+        println("Convert to Word Success..")
+        println(changeNameFile)
     }catch (e : Exception)
     {
         println(e)
